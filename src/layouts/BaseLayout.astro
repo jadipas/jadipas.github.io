@@ -1,0 +1,32 @@
+---
+import "../styles/global.css";
+
+interface Props {
+    title?: string;
+    description?: string;
+}
+
+const { title = "Iordanis Antypas", description = "" } = Astro.props;
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <style>
+            body {
+                background-color: rgb(11, 20, 26) !important;
+                color: rgb(243, 244, 246) !important;
+            }
+        </style>
+    </head>
+    <body class="bg-rich-black text-anti-flash-white antialiased">
+        <main class="min-h-screen flex justify-center px-4 py-0">
+            <div class="w-full max-w-6xl">
+                <slot />
+            </div>
+        </main>
+    </body>
+</html>

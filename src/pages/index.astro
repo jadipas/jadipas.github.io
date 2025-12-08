@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero";
+import NewsSection from "../components/NewsSection";
+import PublicationsSection from "../components/PublicationsSection";
+---
+
+<BaseLayout
+    title="Jordan Adipas – Research"
+    description="Research portfolio and publications"
+>
+    <div class="w-full grid gap-8 lg:grid-cols-12 lg:h-screen">
+        {/* Hero column - fixed mascot, scrollable content */}
+        <aside class="lg:col-span-4 lg:overflow-hidden flex flex-col">
+            <Hero client:load />
+        </aside>
+
+        {/* Scrollable content column */}
+        <section class="lg:col-span-8 overflow-y-auto pr-4 lg:pr-2 space-y-16">
+            <NewsSection client:load />
+
+            <PublicationsSection client:load />
+        </section>
+    </div>
+</BaseLayout>

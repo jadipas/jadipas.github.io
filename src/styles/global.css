@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+    /* Brand Palette */
+    --color-bg-base: #0b141a;
+    --color-bg-surface: #1e293b;
+
+    --color-text-base: #f3f4f6;
+    --color-text-muted: #334155;
+
+    --color-accent-primary: #61a5c2;
+    --color-accent-secondary: #468faf;
+    --color-accent-light: #a9d6e5;
+    --color-accent-active: #2a6f97;
+}
+
+/* Keep cursor as arrow at all times */
+* {
+    cursor: default !important;
+}
+
+/* Allow links to override with pointer on hover */
+a:hover {
+    cursor: pointer;
+}
+
+html,
+body {
+    cursor: default;
+}
+
+::-webkit-scrollbar {
+    width: 4px;   /* TRUE thin */
+    height: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1e293b;
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-accent-primary);
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #1e293b transparent;
+}
+
+
