@@ -83,10 +83,7 @@ const Mascot: React.FC<MascotProps> = ({ className = "" }) => {
       rimLight.castShadow = false;
       scene.add(rimLight);
 
-      const baseUrl = import.meta.env.BASE_URL || "/";
-      const glbPath = `${baseUrl}avatar.glb`;
-
-      loadGLTFModel(scene, glbPath, {
+      loadGLTFModel(scene, "/avatar.glb", {
         receiveShadow: true,
         castShadow: true,
       })
