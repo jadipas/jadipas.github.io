@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import SiteNav from "../components/SiteNav.astro";
 
 interface Props {
     title?: string;
@@ -23,6 +24,7 @@ const { title = "Iordanis Antypas", description = "" } = Astro.props;
         </style>
     </head>
     <body class="bg-rich-black text-anti-flash-white antialiased">
+        <SiteNav />
         <main class="min-h-screen flex justify-center px-4 py-0">
             <div class="w-full max-w-6xl">
                 <slot />

@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Hero from "../../components/Hero";
+import ProjectCard from "../../components/ProjectCard.astro";
+
+const projects = [
+    {
+        title: "LXv Launch",
+        href: "/projects/lxv_launch",
+        description:
+            "Modular ROS2 Jazzy launch baseline for bring-up, controller management, and practical FR3 experiment workflows.",
+        mediaPath: "/media/lxv-launch-hero.mp4",
+    },
+];
+---
+
+<BaseLayout title="Projects | Iordanis Antypas" description="Project overview and demos">
+    <div class="w-full grid gap-8 lg:grid-cols-12 lg:h-screen">
+        <aside class="lg:col-span-4 lg:overflow-hidden flex flex-col">
+            <Hero client:load />
+        </aside>
+
+        <section class="lg:col-span-8 overflow-y-auto pr-4 lg:pr-2 py-6 space-y-6">
+            <header class="space-y-2">
+                <p class="text-md uppercase tracking-[0.12em] text-slate-400">Projects</p>
+            </header>
+
+            <div class="space-y-4 pb-6">
+                {
+                    projects.map((project) => (
+                        <a href={project.href} class="block">
+                            <ProjectCard
+                                mediaPath={project.mediaPath}
+                                title={project.title}
+                                description={project.description}
+                            />
+                        </a>
+                    ))
+                }
+            </div>
+        </section>
+    </div>
+</BaseLayout>
