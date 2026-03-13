@@ -21,10 +21,13 @@ import LxvInteractivePreview from "../../components/LxvInteractivePreview";
             <figure class="space-y-2 pt-2">
                 <div class="overflow-hidden rounded-2xl border border-slate-700/70 bg-slate-900/60">
                     <video
+                        autoplay
+                        loop
+                        muted
+                        playsinline
+                        preload="auto"
                         controls
-                        preload="metadata"
                         class="aspect-video w-full"
-                        poster="/favicon.svg"
                     >
                         <source src="/media/lxv-launch-hero.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
