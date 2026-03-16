@@ -3,7 +3,7 @@ export type Publication = {
   authors: string;
   venue: string;
   year: number;
-  type: "conference" | "journal" | "workshop" | "preprint";
+  type: "conference" | "journal" | "workshop" | "preprint" | "";
   links?: {
     pdf?: string;
     arxiv?: string;
@@ -19,7 +19,7 @@ export const publications: Publication[] = [
     authors: "I. Antypas, P. Song",
     venue: "Master Thesis",
     year: 2024,
-    type: "preprint",
+    type: "",
     links: {
       code: "https://github.com/jadipas/RT-plus",
     },
