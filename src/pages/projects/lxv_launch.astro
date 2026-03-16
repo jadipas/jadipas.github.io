@@ -12,7 +12,9 @@ import LxvInteractivePreview from "../../components/LxvInteractivePreview";
     codeLabel="Open Repository"
 >
     <figure slot="hero" class="space-y-2 pt-2">
-        <div class="overflow-hidden rounded-2xl border border-slate-700/70 bg-slate-900/60">
+        <div
+            class="overflow-hidden rounded-2xl border border-slate-700/70 bg-slate-900/60"
+        >
             <video
                 autoplay
                 loop
@@ -27,17 +29,22 @@ import LxvInteractivePreview from "../../components/LxvInteractivePreview";
             </video>
         </div>
         <figcaption class="text-sm text-slate-400">
-            Real hardware execution using the LXv launch stack and example pouring task.
+            Real hardware execution using the LXv launch stack and example
+            pouring task.
         </figcaption>
     </figure>
 
     <section class="space-y-4">
-        <h2 class="text-2xl font-semibold text-slate-100">What this repository is</h2>
+        <h2 class="text-2xl font-semibold text-slate-100">
+            What this repository is
+        </h2>
         <p class="leading-7 text-slate-300">
-            LXv Launch is a clean ROS2 launch and configuration baseline used in our lab for experiments
-            with the Franka FR3.
+            LXv Launch is a clean ROS2 launch and configuration baseline used in
+            our lab for experiments with the Franka FR3.
         </p>
-        <p class="leading-7 text-slate-300">It provides a structured starting point for:</p>
+        <p class="leading-7 text-slate-300">
+            It provides a structured starting point for:
+        </p>
         <ul class="list-disc space-y-2 pl-6 text-slate-300">
             <li>bringing up the robot</li>
             <li>spawning and switching controllers</li>
@@ -45,8 +52,8 @@ import LxvInteractivePreview from "../../components/LxvInteractivePreview";
             <li>connecting lightweight UIs or teleoperation nodes</li>
         </ul>
         <p class="leading-7 text-slate-300">
-            The focus is clarity and usability rather than completeness. It is intended to be easy to
-            read and modify depending on the experiment.
+            The focus is clarity and usability rather than completeness. It is
+            intended to be easy to read and modify depending on the experiment.
         </p>
     </section>
 
@@ -62,17 +69,24 @@ import LxvInteractivePreview from "../../components/LxvInteractivePreview";
             <li>Simple UI connection example</li>
             <li>Modular launch structure for extension</li>
         </ul>
-        <blockquote class="rounded-lg border-l-4 border-slate-500/80 bg-slate-900/40 px-4 py-3 text-slate-300">
-            Real hardware is the primary target. Simulation support for Gazebo is added but is not the main
-            focus.
+        <blockquote
+            class="rounded-lg border-l-4 border-slate-500/80 bg-slate-900/40 px-4 py-3 text-slate-300"
+        >
+            Real hardware is the primary target. Simulation support for Gazebo
+            is added but is not the main focus.
         </blockquote>
     </section>
 
     <section class="space-y-4">
-        <h2 class="text-2xl font-semibold text-slate-100">Interactive preview</h2>
+        <h2 class="text-2xl font-semibold text-slate-100">
+            Interactive preview
+        </h2>
         <p class="leading-7 text-slate-300">
-            A lightweight browser model is included below to visualize the basic structure and example
-            motion used in the demo. The specific semantics can be left up to interpertation but the essence is that the examples support both pre-planned motion or manual control, with modular augmentations easily made on top of the examples.
+            A lightweight browser model is included below to visualize the basic
+            structure and example motion used in the demo. The specific
+            semantics can be left up to interpertation but the essence is that
+            the examples support both pre-planned motion or manual control, with
+            modular augmentations easily made on top of the examples.
         </p>
         <p class="leading-7 text-slate-300">
             This is only a visual preview and is not connected to hardware.
@@ -81,13 +95,20 @@ import LxvInteractivePreview from "../../components/LxvInteractivePreview";
     </section>
 
     <section class="space-y-4">
-        <h2 class="text-2xl font-semibold text-slate-100">Who this may be useful for</h2>
-        <p class="leading-7 text-slate-300">This repository may be useful if you:</p>
+        <h2 class="text-2xl font-semibold text-slate-100">
+            Who this may be useful for
+        </h2>
+        <p class="leading-7 text-slate-300">
+            This repository may be useful if you:
+        </p>
         <ul class="list-disc space-y-2 pl-6 text-slate-300">
             <li>are starting work with FR3 + ROS2</li>
             <li>want a clean launch baseline</li>
             <li>need quick bring-up for experiments</li>
-            <li>prefer modifying an existing structure instead of building from scratch</li>
+            <li>
+                prefer modifying an existing structure instead of building from
+                scratch
+            </li>
         </ul>
     </section>
 </ProjectPageLayout>
